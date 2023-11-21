@@ -11,17 +11,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.recipeapp.Adapters.RandomRecipeAdapter;
 import com.example.recipeapp.Listeners.RandomRecipeResponseListener;
 import com.example.recipeapp.Listeners.RecipeClickListener;
 import com.example.recipeapp.Models.RandomRecipeApiResponse;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,12 +32,10 @@ public class MainActivity extends AppCompatActivity {
     SearchView searchView;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         dialog = new ProgressDialog(this);
         dialog.setTitle("Loading....");
